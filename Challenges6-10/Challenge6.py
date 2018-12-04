@@ -1,10 +1,9 @@
-#First download the zip file from url 'channel.zip' and extract it.
+#First download the zip file from url 'channel.zip'.
+
 import  re, zipfile
 
-#base_path = os.getcwd() + "\\Challenge6files\\" #For windows devices only
 z = zipfile.ZipFile("channel.zip")
 
-#z.extractall(path = str(base_path) + "extraction")
 
 file_number = 90052  #Initial file number
 comments = []

@@ -1,6 +1,6 @@
+#Challenge URL = "http://www.pythonchallenge.com/pc/def/equality.html
+
 import re
-
-
 matches = []
 
 fp = open("Challenge3text.txt", "r")

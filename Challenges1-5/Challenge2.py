@@ -1,3 +1,5 @@
+#Challenge URL "http://www.pythonchallenge.com/pc/def/ocr.html"
+
 storage = {}
 
 f = open("Challenge2text", "r")
@@ -13,4 +15,4 @@ for line in f:
 
 result = ''.join(list(filter(lambda x:(storage[x] == 1), storage)))
 f.close()
-#print(result)
+print(result)

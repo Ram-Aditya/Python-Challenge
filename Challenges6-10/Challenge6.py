@@ -1,3 +1,4 @@
+#CHallenge URl = "http://www.pythonchallenge.com/pc/def/channel.html"
 #First download the zip file from url 'channel.zip'.
 
 import  re, zipfile

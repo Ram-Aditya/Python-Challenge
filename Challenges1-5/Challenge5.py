@@ -1,13 +1,15 @@
-import pickle
+#Challenge URL = "http://www.pythonchallenge.com/pc/def/peak.html"
+
+import pickle, urllib.request
 
 
-fp = open("Challenge5.txt", "rb")
-#fp.close()
+page = urllib.request.urlopen("http://www.pythonchallenge.com/pc/def/banner.p")
 
-f = open("test_unix.txt", "wb")
-#pick_dict = {"a":2134, "b":"1234", "c":{"d": 1, "e":2}}
-#pickle.dump(pick_dict, f)
+result = pickle.load(page)
 
-example_dict = pickle.load(fp)
-print(example_dict)
-fp.close()
+#print(result)
+
+for i in range(len(result)):
+    for j in range(len(result[i])):
+        print(result[i][j][0] * result[i][j][1], end ="")
+    print()

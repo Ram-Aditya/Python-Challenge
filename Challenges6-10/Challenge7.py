@@ -1,3 +1,4 @@
+#http://www.pythonchallenge.com/pc/def/oxygen.html
 import PIL.Image
 
 image = PIL.Image.open("oxygen.png")
